@@ -57,6 +57,7 @@ Awk is a POSIX-standard command line tool and programming language.  If you use 
 |------|-------------|
 | [csvquote](https://github.com/dbro/csvquote) | See the [CSV](#csv) section. |
 | [GNU datamash](https://www.gnu.org/software/datamash/) | Perform statistical operations on text input. |
+| [Hawk](https://github.com/gelisam/hawk) | Transform text from the command-line using Haskell expressions. |
 | [rq](https://github.com/dflemstr/rq) | See the [JSON section](#json). |
 
 
@@ -74,7 +75,9 @@ CSV, TSV, and other delimiter-separated value formats.  Tools belong on this lis
 | [csvkit](https://github.com/wireservice/csvkit) | csvkit is a suite of command-line tools for converting to and working with CSV: convert, clean, cut, grep, join, sort, stack, format, render, query, analyze, etc. |
 | [csvquote](https://github.com/dbro/csvquote) | Transform CSV to and from a format processable with [Awk-like](#awk-like) tools. |
 | [csvtk](https://github.com/shenwei356/csvtk) | Search, sample, cut, join, transpose, and sort CSV/TSV files.  Rename columns.  Replace fields and generate new fiends from existing fields.  Plot data as vector or raster histograms and box, line, and scatter plots.  Convert CSV to Markdown.  Convert XLSX to CSV.  Split XLSX sheets. |
+| [CSVtoTable](https://github.com/vividvilla/csvtotable) | Convert CSV to a searchable and sortable HTML table. |
 | [dasel](https://github.com/TomWright/dasel) | See the [JSON section](#json). |
+| [Graphtage](https://github.com/trailofbits/graphtage) | See the [JSON section](#json). |
 | [jp (sgreben)](https://github.com/sgreben/jp) | Plot data.  See the [JSON](#json) section. |
 | [Mario](https://github.com/python-mario/mario) | See the [JSON section](#json). |
 | [MCMD (M-Command)](https://github.com/nysol/mcmd) | Select, sample, cut, join, sort, reformat, and generate CSV files.  Contains a large set of commands. |
@@ -82,7 +85,9 @@ CSV, TSV, and other delimiter-separated value formats.  Tools belong on this lis
 | [pawk](https://github.com/alecthomas/pawk) | Process text with Awk-like patterns, but Python code. |
 | [rows](https://github.com/turicas/rows) | A Python library with a [CLI](http://turicas.info/rows/cli/).  Convert between a number of [file formats](http://turicas.info/rows/plugins/) for tabular data: CSV, XLS, XLSX, ODS, and others.  Query the data (via SQLite).  Combine tables.  Generate schemas. |
 | [rq](https://github.com/dflemstr/rq) | See the [JSON section](#json). |
+| [scrubcsv](https://github.com/faradayio/scrubcsv) | Remove bad lines from a CSV file and normalize the rest. Written in Rust. |
 | [tab](http://tkatchev.bitbucket.io/tab/) | A non-Turing-complete statically typed programming language for data processing.  An alternative to Awk. |
+| [teip](https://github.com/greymd/teip) | Select fields, character ranges, or regular expression matches from the standard input.  Replace them with the output of a command. |
 | [eBay's TSV utilities](https://github.com/eBay/tsv-utils) | Filtering, statistics, sampling, joins and other operations on TSV files.  High performance, especially good for large datasets.  Written in D. |
 | [tv](https://github.com/codechenx/tv) | View delimited files in the terminal. |
 | [VisiData](https://github.com/saulpw/visidata) | Explore interactively data in TSV, CSV, XLS, XLSX, HDF5, JSON, and [other formats](http://visidata.org/man/#loaders).  [Introduction](https://jsvine.github.io/intro-to-visidata/). |
@@ -111,9 +116,11 @@ See the [big comparison table](sql-based.md).  It covers
 
 | Name and link | Description |
 |---------------|-------------|
+| [clconf](https://github.com/pastdev/clconf) | See the [YAML section](#yaml-toml). |
 | [dasel](https://github.com/TomWright/dasel) | Query and update data structures from the command line.  Comparable to jq/yq but supports JSON, TOML, YAML, and XML.  Static binaries available for releases. |
 | [fx](https://github.com/antonmedv/fx) | Run arbitrary JavaScript on JSON input.  Standalone binaries available. |
 | [gojq](https://github.com/itchyny/gojq) | A pure Go implementation of jq (see below).  Supports YAML input and output. |
+| [Graphtage](https://github.com/trailofbits/graphtage) | Compare and merge tree-like structures semantically.  Supports JSON, JSON5, XML, HTML, YAML, and CSV.  Can be used as a Python library. |
 | [gron](https://github.com/tomnomnom/gron) | Convert JSON to and from flat, greppable lists of "path=value" statements. |
 | [JC](https://github.com/kellyjonbrazil/jc) | Convert the output of standard command line tools to JSON. |
 | [jello](https://github.com/kellyjonbrazil/jello) | Query JSON and [JSON Lines](http://jsonlines.org/) with Python code.  Output the result in a line-based format suitable for creating Bash arrays.  Generate a grep-able schema. |
@@ -156,6 +163,7 @@ See the [big comparison table](sql-based.md).  It covers
 | Name and link | Description |
 |---------------|-------------|
 | [dasel](https://github.com/TomWright/dasel) | Supports XML.  See the [JSON section](#json). |
+| [Graphtage](https://github.com/trailofbits/graphtage) | See the [JSON section](#json). |
 | [hred](https://github.com/danburzo/hred) | Query XML and HTML with a query language based on CSS selectors. |
 | [html-xml-utils](https://www.w3.org/Tools/HTML-XML-utils/README) | A number of simple utilities (like `hxcopy`, `hxpipe`, `hxunent`, `hxselect`) for manipulating HTML and XML files from [W3C](https://www.w3.org/).  Written in C, quite old-fashioned, but still relevant and maintained. |
 | [Mario](https://github.com/python-mario/mario) | Supports XML.  See the [JSON section](#json). |
@@ -185,8 +193,10 @@ With a format converter like Remarshal (below) you can use [JSON](#json) tools t
 
 | Name and link | Description |
 |---------------|-------------|
+| [clconf](https://github.com/pastdev/clconf) | Merge multiple config files and extract values from them using path string.  Supports JSON and YAML.  Can be used as a Go library. |
 | [dasel](https://github.com/TomWright/dasel) | Supports TOML and YAML.  See the [JSON section](#json). |
 | [gojq](https://github.com/itchyny/gojq) | Supports YAML.  See the [JSON section](#json). |
+| [Graphtage](https://github.com/trailofbits/graphtage) | Supports YAML.  See the [JSON section](#json). |
 | [Mario](https://github.com/python-mario/mario) | Supports YAML.  See the [JSON section](#json). |
 | [Remarshal](https://github.com/dbohdan/remarshal) | Convert between CBOR, JSON, MessagePack, TOML, and YAML.  Validate each of the formats.  Pretty-print JSON, TOML, and YAML. |
 | [rq](https://github.com/dflemstr/rq) | Supports TOML and YAML.  See the [JSON section](#json). |
